@@ -1,18 +1,12 @@
 package slidenerd.vivz.aademo;
 
-import android.widget.TextView;
-
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.OptionsMenu;
-import org.androidannotations.annotations.ViewById;
 
-@EActivity(R.layout.activity_sub)
+@EActivity(R.layout.activity_base)
 @OptionsMenu(R.menu.menu_sub)
 public class SubActivity extends BaseActivity {
-
-    @ViewById(R.id.text_message)
-    TextView message;
 
     @AfterViews
     void setMessage() {
